@@ -8,7 +8,7 @@ public class WordCounterTests {
     WordCounter sut = new WordCounter();
 
     @Test
-    public void it_should_return_IllegalArgumentException_when_given_input_is_null() {
+    public void it_should_return_NullPointerException_when_given_input_is_null() {
         //Arrange
         //Act
         Throwable throwable = catchThrowable(() -> sut.getCounter(null));
